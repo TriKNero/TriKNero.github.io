@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {withStyles} from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 
@@ -23,7 +23,6 @@ class Welcome extends Component {
 
 const styles = {
   mainBlock: {
-    backgroundColor: '#282c34',
     color: '#fff'
   }
 };

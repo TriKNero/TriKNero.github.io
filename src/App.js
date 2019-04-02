@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header/header';
-import Welcome from './components/welcome/welcome';
-
+import MainPage from './components/pages/main-page';
+import {MuiThemeProvider} from "@material-ui/core/styles";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {theme} from './components/material-theme';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <Welcome/>
-        <header className="App-header">
-          <img
-            src={logo}
-            className="App-logo"
-            alt="logo"
-          />
-        </header>
-      </div>
+      <MuiThemeProvider theme={theme}>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={MainPage}/>
+          </Switch>
+        </Router>
+      </MuiThemeProvider>
     );
   }
 }
