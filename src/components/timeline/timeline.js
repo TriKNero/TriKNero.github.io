@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
 import siteConfig from '../../../data/siteConfig'
 
+
 const Timeline = ({ className }) => {
   return (
     <div className={className}>
@@ -15,7 +16,7 @@ const Timeline = ({ className }) => {
               <span className="timeline__year">{job.begin.year}</span>
             </span>
             <h2 className='timeline__title'>{job.occupation} at {job.company} <br /><small className='timeline__title--small'>({job.duration || 'present'})</small></h2>
-            <p>{job.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: job.description }}/>
           </div>
         </article>
       ))}

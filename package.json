@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing your digital curriculum with GatsbyJS",
   "version": "0.0.1",
-  "author": "Francisco Santos <yoshi.df@gmail.com>",
+  "author": "Kristian Korneev <krisnerodev@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
     "gatsby": "2.4.2",
@@ -32,20 +32,17 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "start": "npm run develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "gh-pages": "2.0.1",
+    "gh-pages": "^2.1.1",
     "prettier": "1.17.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv"
-  },
-  "bugs": {
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv/issues"
+    "url": "https://github.com/TriKNero/TriKNero.github.io"
   }
 }

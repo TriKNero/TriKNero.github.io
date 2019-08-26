@@ -1,91 +1,189 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
+  siteTitle: 'Hello! I\'m Kristian!',
+  siteDescription: `Korneev Kristian CV`,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  authorName: 'Kristian Korneev',
+  twitterUsername: '',
+  githubUsername: 'TriKNero',
+  authorAvatar: '/images/avatar.jpg',
+  authorDescription: `Hey there! My name is Kristian Korneev. I am a web developer with 4+ years of experience. I've been working at regional Social Security Fund for 1 year and at TechGC Holding, Inc for 2 year and half of year in astraload corp besides temporary small projects.`,
   skills: [
     {
-      name: 'HTML',
-      level: 70
-    },
-    {
       name: 'CSS',
-      level: 60
+      level: 90,
     },
     {
-      name: 'Javascript',
-      level: 50
+      name: 'JSS',
+      level: 90,
     },
     {
-      name: 'NodeJs',
-      level: 40
+      name: 'JavaScript',
+      level: 94,
+    },
+    {
+      name: 'Node JS',
+      level: 92,
+    },
+    {
+      name: 'KOA',
+      level: 90,
+    },
+    {
+      name: 'ES 6',
+      level: 90,
     },
     {
       name: 'React',
-      level: 60
+      level: 95,
+    },
+    {
+      name: 'Meteor',
+      level: 90,
+    },
+    {
+      name: 'Gatsby',
+      level: 82,
     },
     {
       name: 'Git',
-      level: 70
+      level: 90,
+    },
+    {
+      name: 'Mongo DB',
+      level: 92,
+    },
+    {
+      name: 'Python',
+      level: 47,
+    },
+    {
+      name: 'Ruby',
+      level: 42,
     }
   ],
   jobs: [
     {
-      company: "Lendico",
+      company: 'Astraload',
       begin: {
         month: 'apr',
-        year: '2018'
+        year: '2019',
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-  
+      occupation: 'Fullstack Web Developer',
+      description: `<strong>Responsibilities:</strong> 
+      <ul>
+        <li>Develop soft for analyzing web applications performance</li>
+        <li>Develop landing page for <a href="https://astraload.com/">astraload.com</a>.</li>
+      </ul>
+      <strong>Advantages:</strong>
+      <ul>
+        <li>Scaled performance for <a href="https://selfleaders.com/">SelfLeaders</a> application from 1000 active users to 4000.</li>
+      </ul>
+      `,
+
     }, {
-      company: "Anapro",
+      company: 'TechGC Holding, Inc',
       begin: {
-        month: 'dec',
-        year: '2016'
+        month: 'may',
+        year: '2017',
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
+      duration: '2 years',
+      occupation: 'Fullstack Web Developer',
+      description: '<strong>Responsibilities:</strong>' +
+        '<ul> ' +
+        '<li>Develop the social network for American senior lawyers with Meteor and React <a href="https://members.techgc.co/">members.techgc.co</a></li>' +
+        ' <li>Develop the microservice for a dump data from legacy soft</li> ' +
+        '<li>Develop the microservice for a messaging feature with KOA framework</li>' +
+        '<li>Write end-to-end tests</li>' +
+        '<li>Write unit tests</li>' +
+        '<li>Support a responsive design</li> ' +
+        '<li>Write stories for storybook</li> ' +
+        '<li>Improve UX design</li> ' +
+        '<li>Develop the custom analytic</li> ' +
+        '</ul>' +
+        '<strong>Advantages:</strong><ul><li>' +
+        'Began develop <a href="https://members.techgc.co/">members.techgc.co</a> from scratch' +
+        '<li>Helped invent and develop many extra features.</li>' +
+        '</li>' +
+        '</ul>',
+    },
+
+    {
+      company: 'Novatest',
       begin: {
-        month: 'set',
-        year: '2012'
+        month: 'feb',
+        year: '2017',
       },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
+      duration: '3 month',
+      occupation: 'Frontend developer',
+      description: `<strong>Responsibilities:</strong>
+        <ul> 
+          <li>Integrate frontend for different websites</li>
+        </ul>
+        <strong>Advantages:</strong>
+        <ul> 
+          <li>Developed frontend for: <a href="https://www.conceptclub.ru">conceptclub.ru</a>, <a href="https://acoolakids.ru/">acoolakids.ru</a>,  
+          <a href="http://www.rbc.group/">rbc.group</a>
+          </li>
+        </ul>
+`,
+    },
+    {
+      company: 'Mafia food',
+      begin: {
+        month: 'oct',
+        year: '2016',
+      },
+      duration: '3 month',
+      occupation: 'Frontend developer',
+      description: `
+        <strong>Responsibilities:</strong>
+        <ul>
+        <li>Develop and implement frontend for <a href="http://www.mafiafood.ru">mafiafood.ru</a></li>
+        </ul>`,
+    },
+    {
+      company: 'Social Security Fund ',
+      begin: {
+        month: 'aug',
+        year: '2015',
+      },
+      duration: '1 yrs e 1 mos',
+      occupation: 'Fullstack Web Developer',
+      description: `
+     <strong>Responsibilities:</strong>
+     <ul> 
+       <li>Develop soft for staff job optimization on PHP, React, Jquery and Flask </li>
+       <li>Support legacy soft</li> 
+       <li>Write end to end testing</li> 
+       <li>Write queries and migrations for large database</li> 
+       <li>Support intranet portal.</li>
+     </ul>
+     <strong>Advantages:</strong>
+     <ul>
+     <li>Automatized some staff job.</li>
+     </ul>
+        `,
+
     },
     /* ... */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    linkedin: 'https://www.linkedin.com/in/kristian-korneev-920b34121',
+    github: 'https://github.com/TriKNero',
+    email: 'krisnerodev@gmail.com',
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
+  siteUrl: 'https://triknero.github.io',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
+  siteCover: '/images/cover.jpg',
+  googleAnalyticsId: 'UA-146463065-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/assets/my_favicon.png',
   headerLinks: [
     {
-      label: 'Francisco Santos',
+      label: 'Kristian Korneev',
       url: '/',
     }
   ]
