@@ -16,7 +16,8 @@ const Timeline = ({ className }) => {
               <span className="timeline__year">{job.begin.year}</span>
             </span>
             <h2 className='timeline__title'>{job.occupation} at {job.company} <br /><small className='timeline__title--small'>({job.duration || 'present'})</small></h2>
-            <p dangerouslySetInnerHTML={{ __html: job.description }}/>
+            <div style={{ position: 'relative', zIndex: 2 }}
+                 dangerouslySetInnerHTML={{ __html: job.description }}/>
           </div>
         </article>
       ))}
@@ -25,7 +26,6 @@ const Timeline = ({ className }) => {
 }
 
 export default styled(Timeline)`
-
   position: relative;
   :before {
     content: '';
@@ -37,12 +37,28 @@ export default styled(Timeline)`
     width: 1px;
     height: calc(100% - 70px);
     background: #25303B;
+    z-index: 1;
   }
+  li {
+    font-size: 12px;
+  }
+  ul {
+      padding-left: 10px;
+   }
+   
   .timeline__item {
     width: 100%;
     margin: 0 0 20px 0;
     position: relative;
+    z-index: 1;
+    background: #fff;
   }
+  
+  ${() => config().media['sm']`
+    .timeline__item {
+      background: none;
+      }
+  `}
   .timeline__item:after {
     content: '';
     display: block;
@@ -96,7 +112,7 @@ export default styled(Timeline)`
     position: absolute;
     top: -5px;
     left: 30%;
-    width: 10px; 
+    width: 10px;
     height: 10px;
     transform: rotate(-45deg);
   }
