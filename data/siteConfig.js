@@ -6,7 +6,7 @@ module.exports = {
   twitterUsername: '',
   githubUsername: 'TriKNero',
   authorAvatar: '/images/avatar.jpg',
-  authorDescription: `Hey there! My name is Kristian Korneev. I am a web developer with 4+ years of experience. I've been working at regional Social Security Fund for 1 year and at TechGC Holding, Inc for 2 year and half of year in astraload corp besides temporary small projects.`,
+  authorDescription: `Hey there! My name is Kristian Korneev. I am a web developer with 4+ years of experience. I've been working at the regional Social Security Fund for 1 year and at TechGC Holding Inc for 2 years, besides temporary small projects. Currently, I work in astraload corp.`,
   skills: [
     {
       name: 'JSS, Radium, Stylus, SCSS, CSS, Less',
