@@ -53,6 +53,12 @@ export default styled(Timeline)`
     z-index: 1;
     background: #fff;
   }
+  @media (max-width: 780px) {
+    .timeline__item:before {
+      display: none !important;
+    }
+  }
+
   
   ${() => config().media['sm']`
     .timeline__item {

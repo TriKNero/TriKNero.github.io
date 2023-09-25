@@ -23,15 +23,7 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'React, Redux',
-      level: 100,
-    },
-    {
       name: 'Meteor, Koa, Express, Node.js',
-      level: 100,
-    },
-    {
-      name: 'Post CSS, CSS modules, JSS',
       level: 100,
     },
     {
@@ -39,32 +31,36 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'AWS SDK, MUI',
-      level: 97,
+      name: 'React, Redux',
+      level: 100,
     },
     {
       name: 'React Native, Electron, Chrome extensions',
-      level: 95,
+      level: 99,
+    },
+    {
+      name: 'AWS SDK, MUI',
+      level: 98,
     },
     {
       name: 'CI/CD, Github Actions',
-      level: 94,
+      level: 99,
     },
     {
-      name: 'Jest, Mocha, TestCafe, Selenium, Storybook, ',
-      level: 95,
+      name: 'Jest, Mocha, TestCafe, Selenium, Storybook',
+      level: 99,
     },
     {
       name: 'Mongo DB',
       level: 95,
     },
     {
-      name: 'MySql, SQLight, PostgreSQL',
+      name: 'MySql, PostgreSQL, SQLight',
       level: 85,
     },
     {
-      name: 'Python',
-      level: 60,
+      name: 'Python(Django / Flask)',
+      level: 50,
     },
   ],
   jobs: [
