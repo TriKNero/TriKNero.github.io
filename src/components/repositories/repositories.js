@@ -24,16 +24,17 @@ class Repositories extends React.Component {
     }
   }
   render () {
-    const { status } = this.state
+    const { status } = this.state;
+    const reposLength = this.state?.repos?.length;
     return (
       <div className={this.props.className}>
         <h2>Latest repositories on Github</h2>
         {status === "loading" && <div className='repositories__loader'><Loader /></div>}
         {status === "ready" &&
           this.state.repos && (
-            <React.Fragment>
+            <>
               <div className="repositories__content">
-                {this.state.repos.map(repo => (
+                {this.state.repos.map((repo, index) => (
                   <React.Fragment key={repo.name}>
                     <div className="repositories__repo">
                       <a className='repositories__repo-link' href={repo.html_url}>
@@ -47,11 +48,11 @@ class Repositories extends React.Component {
                         ★ {repo.stargazers_count}
                       </div>
                     </div>
-                    <hr />
+                    {index < reposLength - 1 && <hr />}
                   </React.Fragment>
                 ))}
               </div>
-            </React.Fragment>
+            </>
           )}
       </div>
     )

@@ -1,184 +1,163 @@
+function countFullYears(startDate) {
+  const today = new Date();
+  return today.getFullYear() - startDate.getFullYear() - (today.getMonth() < startDate.getMonth() || (today.getMonth() === startDate.getMonth() && today.getDate() < startDate.getDate()) ? 1 : 0);
+}
+
+const startDate = new Date('2015-08-01');
+const fullYears = countFullYears(startDate);
+
 module.exports = {
-  siteTitle: 'Hello! I\'m Kristian!',
+  siteTitle: 'Kristian Korneev',
+  subTitle: 'Software Engineer',
   siteDescription: `Korneev Kristian CV`,
   keyWords: ['gatsbyjs', 'react'],
   authorName: 'Kristian Korneev',
   twitterUsername: '',
   githubUsername: 'TriKNero',
-  authorAvatar: '/images/avatar.jpg',
-  authorDescription: `Hey there! My name is Kristian Korneev. I am a web developer with 4+ years of experience. I've been working at the regional Social Security Fund for 1 year and at TechGC Holding Inc for 2 years, besides temporary small projects. Currently, I work in astraload corp.`,
+  authorAvatar: '/images/avatar.jpeg',
+  authorDescription: `${fullYears}+ years of experience in Front End and Back End technologies. Worked as a JavaScript, React and Electron developer. Improving tasks to a significantly higher standard than their previous execution. I thoroughly enjoy working with ambitious, motivated, and compassionate people. I'm a proud father of two lovely daughters. During my free time, I indulge in playing the guitar and exploring new destinations through travel.
+`,
   skills: [
     {
-      name: 'JSS, Radium, Stylus, SCSS, CSS, Less',
-      level: 92,
+      name: 'TypeScript, JavaScript',
+      level: 100,
     },
     {
-      name: 'React, React Hooks',
-      level: 92,
+      name: 'React, Redux',
+      level: 100,
     },
     {
-      name: 'ES6',
-      level: 90,
+      name: 'Meteor, Koa, Express, Node.js',
+      level: 100,
     },
     {
-      name: 'Node JS',
-      level: 92,
+      name: 'Post CSS, CSS modules, JSS',
+      level: 100,
     },
     {
-      name: 'KOA',
-      level: 90,
+      name: 'Next, Gatsby',
+      level: 100,
     },
     {
-      name: 'Meteor',
-      level: 90,
+      name: 'AWS SDK, MUI',
+      level: 97,
     },
     {
-      name: 'Gatsby',
-      level: 90,
+      name: 'React Native, Electron, Chrome extensions',
+      level: 95,
     },
     {
-      name: 'Redux',
-      level: 80,
+      name: 'CI/CD, Github Actions',
+      level: 94,
     },
     {
-      name: 'Jest, TestCafe, Selenium, Storybook',
-      level: 85,
-    },
-    {
-      name: 'Git',
-      level: 88,
+      name: 'Jest, Mocha, TestCafe, Selenium, Storybook, ',
+      level: 95,
     },
     {
       name: 'Mongo DB',
-      level: 90,
+      level: 95,
     },
     {
       name: 'MySql, SQLight, PostgreSQL',
-      level: 75,
+      level: 85,
     },
     {
       name: 'Python',
-      level: 47,
+      level: 60,
     },
-    {
-      name: 'Ruby',
-      level: 42,
-    }
   ],
   jobs: [
+
     {
-      company: 'Astraload',
+      company: 'MaestroQA, USA, Remote',
+      begin: {
+        month: 'feb',
+        year: '2020',
+      },
+      duration: "3.8",
+      occupation: 'Full Stack Engineer',
+      description: `<p><strong>Responsibilities:</strong></p> 
+      <ul>
+        <li>Served as a full stack engineer for MaestroQA Analytics App, actively contributing to the development of new features and services.</li>
+      </ul>
+      <p><strong>Achievements:</strong></p>
+      <ul>
+        <li>Innovated and developed MaestroQA screen recorder extension and Electron Companion APP.</li>
+        <li>Successfully configured CI processes using GitHub Actions, leading to improved code testing and coverage.</li>
+        <li>Experienced in team leadership.</li>
+      </ul>
+      `,
+    },
+    {
+      company: 'Astraload, USA, Remote',
       begin: {
         month: 'apr',
         year: '2019',
       },
       duration: null,
-      occupation: 'Fullstack Web Developer',
+      occupation: 'Full Stack Web Developer',
       description: `<p><strong>Responsibilities:</strong></p> 
       <ul>
-        <li>Develop soft for analyzing web applications performance</li>
-        <li>Develop landing page for <a href="https://astraload.com/">astraload.com</a>.</li>
+        <li>Actively involved in shaping the core features of the Astraload Load Testing performance tool.</li>
+        <li>Helped to improve performance of web application for such companies as: selfleaders, hive, white rabbit japan</li>
       </ul>
       <p><strong>Achievements:</strong></p>
       <ul>
-        <li>Scaled performance for <a href="https://selfleaders.com/">SelfLeaders</a> application from 1000 active users to 4000.</li>
+        <li>Helped to scale performance of <a href="https://selfleaders.com/">SelfLeaders</a> web application from 1000 to 4000 active users.</li>
+        <li>Experienced in team leadership.</li>
       </ul>
       `,
-
     }, {
-      company: 'TechGC Holding, Inc',
+      company: 'TechGC Holding, Inc, USA, Remote',
       begin: {
         month: 'may',
         year: '2017',
       },
       duration: '2 years',
-      occupation: 'Fullstack Web Developer',
+      occupation: 'Full Stack Web Developer',
       description: `<p><strong>Responsibilities:</strong></p>
         <ul> 
-        <li>Develop the social network for American senior lawyers with Meteor and React <a href="https://members.techgc.co/">members.techgc.co</a></li>
-         <li>Develop the microservice for a dump data from legacy soft</li> 
-        <li>Develop the microservice for a messaging feature with KOA framework</li>
-        <li>Write end-to-end tests</li>
-        <li>Write unit tests</li>
-        <li>Support a responsive design</li> 
-        <li>Write stories for storybook</li> 
-        <li>Improve UX design</li> 
-        <li>Develop the custom analytic</li> 
+          <li>Develop a social network for American senior lawyers using Meteor and React, accessible at [members.techgc.co](https://members.techgc.co).</li>
+          <li>Create a microservice for seamless data extraction from legacy software.</li>
+          <li>Design and implement a messaging feature using the KOA framework.</li>
+          <li>Proficient in writing comprehensive end-to-end and unit tests for robust code coverage.</li>
+          <li>Ensure a seamless user experience by supporting responsive design principles.</li>
+          <li>Contribute to UI/UX enhancements for improved user interaction and satisfaction.</li>
+          <li>Develop custom analytics to provide valuable insights for informed decision-making.</li>
         </ul>
         <p>
         <strong>Achievements:</strong>
         </p>
         <ul>
-        <li>
-        Began develop <a href="https://members.techgc.co/">members.techgc.co</a> from scratch
-        <li>Helped invent and develop many extra features.</li>
+        <li>Developed members.techgc.co from scratch</li>
         </li>
         </ul>
       </p>`,
     },
 
     {
-      company: 'Novatest',
-      begin: {
-        month: 'feb',
-        year: '2017',
-      },
-      duration: '3 month',
-      occupation: 'Frontend developer',
-      description: `<p><strong>Responsibilities:</strong></p>
-        <ul> 
-          <li>Integrate frontend for different websites</li>
-        </ul>
-        <p><strong>Achievements:</strong></p>
-        <ul> 
-          <li>Developed frontend for: <a href="https://www.conceptclub.ru">conceptclub.ru</a>, <a href="https://acoolakids.ru/">acoolakids.ru</a>,  
-          <a href="http://www.rbc.group/">rbc.group</a>
-          </li>
-        </ul>
-`,
-    },
-    {
-      company: 'Mafia food',
-      begin: {
-        month: 'oct',
-        year: '2016',
-      },
-      duration: '3 month',
-      occupation: 'Frontend developer',
-      description: `
-        <p><strong>Responsibilities:</strong></p>
-        <ul>
-        <li>Develop and implement frontend for <a href="http://www.mafiafood.ru">mafiafood.ru</a></li>
-        </ul>`,
-    },
-    {
-      company: 'Social Security Fund ',
+      company: 'Freelance',
       begin: {
         month: 'aug',
         year: '2015',
       },
-      duration: '1 yrs e 1 mos',
-      occupation: 'Fullstack Web Developer',
-      description: `
-     <p><strong>Responsibilities:</strong></p>
-     <p>
-     <ul> 
-       <li>Develop soft for staff job optimization on PHP, React, Jquery and Flask </li>
-       <li>Support legacy soft</li> 
-       <li>Write end to end testing</li> 
-       <li>Write queries and migrations for large database</li> 
-       <li>Support intranet portal.</li>
-     </ul>
-     </p>
-     <p>
-     <strong>Achievements:</strong>
-     </p>
-     <ul>
-     <li>Automatized some staff job.</li>
-     </ul>
-        `,
-
-    },
+      duration: '2 years',
+      occupation: 'Frontend developer',
+      description: `<p><strong>Responsibilities:</strong></p>
+        <ul> 
+          <li>Integrate frontend for different websites.</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul> 
+          <li>Developed frontend for: conceptclub, acoolakids, rbc.group, mafiafood</li>
+          <li>Developing some soft for different companies to optimize staff jobs. Uses PHP, React, Jquery and Flask</li>
+          <li>Support legacy soft</li> 
+          <li>Write end to end testing</li> 
+          <li>Write queries and migrations for large database</li> 
+        </ul>
+`,
+    }
     /* ... */
   ],
   social: {

@@ -8,8 +8,8 @@ const Timeline = ({ className }) => {
   return (
     <div className={className}>
       <h1>Experience</h1>
-      {siteConfig.jobs && siteConfig.jobs.map(job => (
-        <article key={job.begin.month + job.begin.year} className='timeline__item'>
+      {siteConfig.jobs && siteConfig.jobs.map((job, index) => (
+        <article key={job.begin.month + job.begin.year + index} className='timeline__item'>
           <div className="inner">
             <span className="timeline__date">
               <span className="timeline__month">{job.begin.month}</span>
@@ -27,7 +27,7 @@ const Timeline = ({ className }) => {
 
 export default styled(Timeline)`
   position: relative;
-  :before {
+  .timeline__item:before {
     content: '';
     display: block;
     position: absolute;
