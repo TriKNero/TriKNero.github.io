@@ -142,14 +142,13 @@ module.exports = {
       occupation: 'Frontend developer',
       description: `<p><strong>Responsibilities:</strong></p>
         <ul> 
-          <li>Integrate frontend for different websites.</li>
+          <li>Frontend development for different customers.</li>
         </ul>
         <p><strong>Achievements:</strong></p>
         <ul> 
           <li>Developed frontend for: conceptclub, acoolakids, rbc.group, mafiafood</li>
           <li>Developing some soft for different companies to optimize staff jobs. Uses PHP, React, Jquery and Flask</li>
           <li>Support legacy soft</li> 
-          <li>Write end to end testing</li> 
           <li>Write queries and migrations for large database</li> 
         </ul>
 `,
