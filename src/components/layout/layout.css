@@ -607,12 +607,17 @@ pre tt:before,
 pre tt:after {
   content: '';
 }
+
+@media only screen and (max-width: 686px) {
+  .container {
+    line-height: 44px;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
-  }
-  .container {
-    line-height: 44px;
   }
 }
 

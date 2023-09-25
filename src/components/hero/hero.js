@@ -16,8 +16,6 @@ const HeroContainer = styled.div`
 `
 
 
-
-
 function Hero({title, subtitle, className}) {
 
   return (
@@ -34,7 +32,7 @@ function Hero({title, subtitle, className}) {
 
 export default styled(Hero)`
   ${p => `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
-  height: 40vh;
+  height: 45vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
